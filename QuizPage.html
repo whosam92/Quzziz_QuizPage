@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Quiz Page Styles -->
+    <link rel="stylesheet" href="QuizPage.css" />
+  </head>
+  <body>
+    <!-- Quiz Section -->
+    <div id="quizSection">
+      <!-- Quiz Title and Timer -->
+      <div id="quizTitleAndTimer">
+        <div id="topBlock">
+          <h3 id="QuizName">Quiz</h3>
+          <div id="timeRemainingBlock">
+            <i class="fa-regular fa-clock"  id="timericon"></i>
+            <p id="time"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz Questions Container -->
+      <div id="QmiddleContainer">
+        <div id="QmiddleBlock">
+          <!-- Questions will be dynamically loaded here -->
+        </div>
+      </div>
+
+      <!-- Quiz Navigation and Controls -->
+      <div id="quizBottomContainer">
+        <div id="bottomBlock">
+          <div id="questionNumberFrom5">
+            <p>
+              <span id="questionNumberDynamic">1</span> out of
+              <span id="totalQuestions">5</span>
+            </p>
+          </div>
+          <div id="quizBottomRight">
+            <button id="nextButton" class="NextBtn">Next</button>
+            <button id="submitButton" class="quizSubmitBtn submitButtonStyle">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiz JavaScript -->
+    <script src="MyNewQuiz.js"></script>
+
+  </body>
+</html>
